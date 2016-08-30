@@ -20,7 +20,7 @@ These files were written and tested with Python 2.7.12.
 
 ## How to Use
 
-Run with "dev_appengine.py ." from the terminal or visit .
+Run with "dev_appengine.py ." from the terminal or visit [http://multi-user-blog-141906.appspot.com/](http://multi-user-blog-141906.appspot.com/).
 
 ## Notes
 The site design looks pretty rough right now, but it should function to
