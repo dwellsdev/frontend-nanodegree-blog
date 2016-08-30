@@ -1,0 +1,17 @@
+{% block content %}
+<div class="post">
+    <div class="post-heading">
+        <div class="post-title">
+            <h2>{{ p.title }}</h2>
+        </div>
+        <div class="post-date">
+            <i>{{ p.created.strftime("%b %d, %Y")}}</i>
+        </div>
+    </div>
+
+    <div class="post-body">
+        {{ p._render_text | safe}}
+    </div>
+</div>
+
+{% endblock %}
