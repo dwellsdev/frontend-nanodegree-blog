@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <link rel="stylesheet" href="/static/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="/static/blog.css" media="screen" title="no title" charset="utf-8">
     <meta charset="utf-8">
     <title>Derrick's Blog</title>
-  </head>
-  <body>
-    <h1 class="text-center">
+</head>
+
+<body>
+    <div class="col-xs-12 header">
+        <div class="container">
+
+
+
+            <h1 class="text-center">
       <a href="/blog">Derrick's Blog</a>
     </h1>
-    <div class="status-text">
+            <div class="status-text">
 
 
-    {% if user %}
+                {% if user %} Hey, {{user.name}}!<br>
+                <ul class="list-inline">
+                    <li><a href="/blog/login" class="btn btn-success">New Post</a></li>
+                    <li><a href="/blog/logout" class="btn btn-danger">Logout</a></li>
+                </ul>
 
-      Hey, {{user.name}}!
-      <a href="/blog/logout" class="btn btn-success">logout</a>
 
-    {% else %}
-    <ul class="list-inline">
-      <li><a href="/blog/login" class="btn btn-success">login</a></li>
-      <li><a href="/blog/signup" class="btn btn-warning">signup</a></li>
-    </ul>
+                {% else %}
+                <br>
+                <ul class="list-inline">
+                    <li><a href="/blog/login" class="btn btn-success">login</a></li>
+                    <li><a href="/blog/signup" class="btn btn-warning">signup</a></li>
+                </ul>
 
-    {% endif %}
+                {% endif %}
+            </div>
+        </div>
     </div>
-    <div class="container">
-      {% block content %}
-      {% endblock %}
+    <div class="col-xs-12 header">
+        <div class="container">
+            {% block content %} {% endblock %}
+        </div>
     </div>
-  </body>
+
+    </div>
+
+</body>
+
 </html>
