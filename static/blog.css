@@ -1,37 +1,47 @@
-body {
+* {
     padding: 0;
     margin: 0;
-    background-color: #111;
+}
+body {
+    background-color: #EBF5DF;
 }
 .post {
-    background-color: #555;
-    color: #eee;
+    background-color: #BAD4AA;
+    color: #111;
     padding: 0 15px 15px 15px;
     border-radius: 25px;
+    word-wrap: break-word;
 }
 h1 a {
-    color: #fd0;
+    color: #E8871E;
 }
 h1 a:hover {
-    color: #ff0;
+    color: #FF9321;
     text-decoration: none;
 }
 h1 a:visited {
-    color: #ec0;
+    color: #E8871E;
 }
 h1 a:active {
-    color: #ff0;
+    color: #FF9321;
 }
 h2 {
-  color:#eee;
+    color: #297373;
 }
 .status-text {
-    color: #eee;
-    text-align:right;
+    color: #111;
+    text-align: right;
 }
 .error {
-  color:red;
+    color: red;
 }
 table {
-  margin:0 auto;
+    margin: 0 auto;
+}
+.header {
+    padding: 0;
+    margin: 0;
+}
+.like {
+    background-color: #FFB8D1;
 }
